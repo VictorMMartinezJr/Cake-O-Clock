@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="text-[#775547] flex justify-between items-center relative md:flex-col">
       {/* Empty div to center nav text */}
       <div className="md:hidden"></div>
-      <span className="flex flex-col items-center md:after:bg-[#775547] md:after:h-[1px] md:after:w-[300%] md:after:my-2 lg:after:w-[45vw]">
+      <span className="flex flex-col items-center mt-4 md:after:bg-[#775547] md:after:h-[1px] md:after:w-[300%] md:after:my-2 lg:after:w-[45vw]">
         <h1 className="font-DancingScript font-bold text-2xl">Cake O' Clock</h1>
         <p className="text-xs tracking-widest font-Poppins">BAKERY HOUSE</p>
       </span>

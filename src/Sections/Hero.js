@@ -1,10 +1,29 @@
-// import cupcakes from "../assets/cupcakes.png";
+import cupcakes from "../assets/cupcakes.png";
 import Navbar from "../components/Navbar";
 
 const Hero = () => {
   return (
-    <section className="hero overflow-x-hidden h-full">
+    <section className="hero overflow-x-hidden h-full text-[#775547] font-Poppins">
       <Navbar />;
+      <div className="content flex flex-col justify-evenly items-center h-[80vh]">
+        <h1 className="text-6xl text-center w-[50%] md:w-[70%] lg:w-[55%] xl:w-[45%] 2xl:text-7xl 2xl:w-[42%]">
+          We are baking for your{" "}
+          <span className="text-[#DB5071]">pleasure</span>
+        </h1>
+        <p className=" w-[60%] text-center md:w-full">
+          Enjoy your indulgent Afternoon Tea in the comfort of your own home
+        </p>
+        <div className="yummies relative">
+          <p>Give me yummies</p>
+          <div className="border border-[#DB5071] absolute h-12 w-[150%] rounded-[150%] top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] -rotate-3"></div>
+          <div className="border border-[#DB5071] absolute h-12 w-[150%] rounded-[150%] top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]"></div>
+        </div>
+        <img
+          src={cupcakes}
+          alt="group of cupcakes in a line"
+          className="xl:w-[900px]"
+        />
+      </div>
     </section>
   );
 };
