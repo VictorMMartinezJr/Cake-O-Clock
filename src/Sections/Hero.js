@@ -15,8 +15,8 @@ const Hero = () => {
         </p>
         <div className="yummies relative">
           <p>Give me yummies</p>
-          <div className="border border-[#DB5071] absolute h-12 w-[150%] rounded-[150%] top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] -rotate-3"></div>
-          <div className="border border-[#DB5071] absolute h-12 w-[150%] rounded-[150%] top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]"></div>
+          <div className="border border-[#DB5071] absolute h-14 w-[150%] rounded-[150%] top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] -rotate-[5deg]"></div>
+          <div className="border border-[#DB5071] absolute h-14 w-[150%] rounded-[150%] top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%]"></div>
         </div>
         <img
           src={cupcakes}
