@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       fontFamily: {
         DancingScript: "'Dancing Script', cursive",
-        Poppins: "'Poppins', serif",
+        OpenSans: "'Open Sans', serif",
+        Meie: "'Meie Script', serif",
       },
     },
   },
