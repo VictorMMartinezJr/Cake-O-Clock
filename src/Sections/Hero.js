@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero overflow-x-hidden h-full text-[#775547] font-OpenSans">
       <Navbar />;
       <div className="content flex flex-col justify-evenly items-center h-[80vh]">
-        <h1 className="text-6xl text-center italic w-[50%] md:w-[70%] lg:w-[55%] xl:w-[45%] 2xl:text-7xl 2xl:w-[42%]">
+        <h1 className="text-6xl text-center italic w-[80%] lg:w-[55%] xl:w-[45%] 2xl:text-7xl 2xl:w-[42%]">
           We are baking for your{" "}
           <span className="text-[#DB5071]">pleasure</span>
         </h1>
