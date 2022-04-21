@@ -2,7 +2,7 @@ import aboutus from "../assets/aboutus.jpg";
 
 const Aboutus = () => {
   return (
-    <section className="hidden 2xl:flex 2xl:justify-center 2xl:items-center 2xl:font-OpenSans 2xl:text-[#775547] h-[50vh]">
+    <section className="hidden 2xl:flex justify-center items-center font-OpenSans text-[#775547] h-[50vh] outline outline-1 outline-blue-700">
       <div className="h-full w-[80%] flex justify-center items-center">
         <div className="flex-1 h-full">
           <div

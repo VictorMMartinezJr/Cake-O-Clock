@@ -38,8 +38,7 @@ const Swiper = ({ data, title }) => {
     );
   };
 
-  const items = data.map((cupcake, i) => {
-    console.log(`index: ${i}`);
+  const items = data.map((cupcake) => {
     return (
       <div className="slide flex flex-col items-center" key={cupcake.id}>
         <img
@@ -56,9 +55,9 @@ const Swiper = ({ data, title }) => {
   });
 
   return (
-    <section className="carousel flex flex-col justify-center items-center font-OpenSans text-[#775547]">
-      <div className="text-center my-8">
-        <h2 className="text-4xl font-bold italic mb-4">{title}</h2>
+    <section className="carousel flex flex-col justify-center items-center font-OpenSans text-[#775547] my-20">
+      <div className="text-center">
+        <h2 className="text-3xl font-bold italic mb-4">{title}</h2>
         <p>
           All Flavors are available through call in (minimum order of 3
           cupcakes)
