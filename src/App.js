@@ -6,6 +6,7 @@ import { cardsData } from "./Sections/Cards/cardsData";
 import Swiper from "./Sections/Swiper";
 import { SwiperData } from "./CarouselData";
 import Expectations from "./Sections/Expectations";
+import FAQ from "./Sections/FAQ";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Aboutus />
       <Swiper data={SwiperData} title="Choose your favorite flavors" />
       <Expectations />
+      <FAQ />
     </div>
   );
 }
