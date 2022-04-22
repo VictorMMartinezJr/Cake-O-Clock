@@ -5,12 +5,14 @@ import { FAQData } from "./FAQData";
 const FAQ = () => {
   const [clicked, setClicked] = useState(false);
 
+  // Set clicked state to selected question
   const toggle = (index) => {
     if (clicked === index) {
       return setClicked(null);
     }
     setClicked(index);
   };
+  
   return (
     <section className="faq flex flex-col items-center text-[#775547] mb-20">
       <h2 className="text-3xl font-bold italic mb-8">FAQ</h2>
@@ -30,11 +32,11 @@ const FAQ = () => {
             <div
               className={`answer overflow-hidden transition duration-500 ${
                 clicked === i
-                  ? "max-h-[300px] opacity-100 translate-y-0"
+                  ? "h-auto opacity-100 translate-y-0"
                   : "max-h-0 opacity-0 -translate-y-4"
               }`}
             >
-              <p className="pt-4 text-sm">{FAQ.answer}</p>
+              <p className="pt-4">{FAQ.answer}</p>
             </div>
           </div>
         );

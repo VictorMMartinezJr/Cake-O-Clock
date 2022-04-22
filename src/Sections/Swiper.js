@@ -26,6 +26,7 @@ const Swiper = ({ data, title }) => {
       />
     );
   };
+  // Next button end
 
   // Previous button
   const renderPrevButton = () => {
@@ -37,7 +38,9 @@ const Swiper = ({ data, title }) => {
       />
     );
   };
+  // Prev button end
 
+  // Slide info
   const items = data.map((cupcake) => {
     return (
       <div className="slide flex flex-col items-center" key={cupcake.id}>
@@ -53,6 +56,7 @@ const Swiper = ({ data, title }) => {
       </div>
     );
   });
+  // Slide info end
 
   return (
     <section className="carousel flex flex-col justify-center items-center font-OpenSans text-[#775547] my-20">

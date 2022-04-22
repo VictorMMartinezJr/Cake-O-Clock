@@ -6,8 +6,7 @@ const Navbar = () => {
 
   return (
     <nav className="text-[#775547] flex justify-between items-center relative md:flex-col">
-      {/* Empty div to center nav text */}
-      <div className="md:hidden"></div>
+      <div className="md:hidden"></div> {/* Empty div to center nav text */}
       <span className="flex flex-col items-center mt-4 md:after:bg-[#775547] md:after:h-[1px] md:after:w-[300%] md:after:my-2 lg:after:w-[45vw]">
         <h1 className="font-DancingScript font-bold text-2xl">Cake O' Clock</h1>
         <p className="text-xs tracking-widest font-Poppins">BAKERY HOUSE</p>
@@ -40,6 +39,7 @@ const Navbar = () => {
           }`}
         ></div>
       </button>
+      {/* Burger icon end */}
       {/* Nav links */}
       <ul
         className={` bg-[#e0c1bf] w-full absolute flex flex-col items-end right-0 top-full pr-2 font-Poppins transition transform ${
@@ -53,6 +53,7 @@ const Navbar = () => {
         <li className="my-2 p-1 md:mr-4 cursor-pointer">FAQ</li>
         <li className="my-2 p-1 cursor-pointer">Contact</li>
       </ul>
+      {/* Nav links end */}
     </nav>
   );
 };

@@ -4,7 +4,7 @@ import Cards from "./Sections/Cards/Cards";
 import Hero from "./Sections/Hero";
 import { cardsData } from "./Sections/Cards/cardsData";
 import Swiper from "./Sections/Swiper";
-import { SwiperData } from "./CarouselData";
+import { LimitedEditionData, SwiperData } from "./CarouselData";
 import Expectations from "./Sections/Expectations";
 import FAQ from "./Sections/FAQ";
 
@@ -17,6 +17,7 @@ function App() {
       <Swiper data={SwiperData} title="Choose your favorite flavors" />
       <Expectations />
       <FAQ />
+      <Swiper data={LimitedEditionData} title="Limited edition flavors" />
     </div>
   );
 }
