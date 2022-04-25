@@ -2,6 +2,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import arrowLeft from "../assets/arrowLeft.svg";
 import arrowRight from "../assets/arrowRight.svg";
+import MainBtn from "../components/MainBtn";
 
 const Swiper = ({ data, title }) => {
   const responsive = {
@@ -59,9 +60,9 @@ const Swiper = ({ data, title }) => {
   // Slide info end
 
   return (
-    <section className="carousel flex flex-col justify-center items-center font-OpenSans text-[#775547] my-20">
+    <section className="carousel flex flex-col justify-center items-center font-OpenSans text-[#775547] mb-8">
       <div className="text-center">
-        <h2 className="text-3xl font-bold italic mb-4">{title}</h2>
+        <h2 className="text-3xl font-bold italic text-center mb-4">{title}</h2>
         <p>
           All Flavors are available through call in (minimum order of 3
           cupcakes)
@@ -79,6 +80,7 @@ const Swiper = ({ data, title }) => {
           infinite
         />
       </div>
+      <MainBtn text="Show me all flavors" />
     </section>
   );
 };

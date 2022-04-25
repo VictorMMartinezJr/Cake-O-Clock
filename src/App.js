@@ -7,6 +7,8 @@ import Swiper from "./Sections/Swiper";
 import { LimitedEditionData, SwiperData } from "./CarouselData";
 import Expectations from "./Sections/Expectations";
 import FAQ from "./Sections/FAQ";
+import Newsletter from "./Sections/Newsletter";
+import Contacts from "./Sections/Contacts";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Expectations />
       <FAQ />
       <Swiper data={LimitedEditionData} title="Limited edition flavors" />
+      <Newsletter />
+      <Contacts />
     </div>
   );
 }
