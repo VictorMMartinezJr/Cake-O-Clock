@@ -5,10 +5,10 @@ const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
 
   return (
-    <nav className="text-[#775547] flex justify-between items-center relative md:flex-col">
+    <nav className="text-[#775547] flex justify-between items-center relative h-[10vh] md:h-auto md:flex-col">
       <div className="md:hidden"></div> {/* Empty div to center nav text */}
       <span className="flex flex-col items-center mt-4 md:after:bg-[#775547] md:after:h-[1px] md:after:w-[300%] md:after:my-2 lg:after:w-[45vw]">
-        <h1 className="font-DancingScript font-bold text-2xl">Cake O' Clock</h1>
+        <h2 className="font-DancingScript font-bold text-2xl">Cake O' Clock</h2>
         <p className="text-xs tracking-widest font-Poppins">BAKERY HOUSE</p>
       </span>
       {/* Burger icon */}
@@ -42,15 +42,25 @@ const Navbar = () => {
       {/* Burger icon end */}
       {/* Nav links */}
       <ul
-        className={` bg-[#e0c1bf] w-full absolute flex flex-col items-end right-0 top-full pr-2 font-Poppins transition transform ${
+        className={` bg-[#775547] text-white w-full absolute flex flex-col items-end right-0 top-full pr-2 font-Poppins transition transform ${
           navActive ? "translate-x-0" : "translate-x-full"
-        } md:relative md:translate-x-0 md:flex-row md:items-center md:pr-0 md:w-[70%] md:justify-between md:bg-transparent lg:w-[60%]`}
+        } md:text-[#775547] md:relative md:translate-x-0 md:flex-row md:items-center md:pr-0 md:w-[70%] md:justify-between md:bg-transparent lg:w-[60%]`}
       >
-        <li className="my-2 p-1 md:mr-4 cursor-pointer">Home</li>
-        <li className="my-2 p-1 md:mr-4 cursor-pointer">About us</li>
-        <li className="my-2 p-1 md:mr-4 cursor-pointer">Choose goodies</li>
-        <li className="my-2 p-1 md:mr-4 cursor-pointer">Delivery</li>
-        <li className="my-2 p-1 md:mr-4 cursor-pointer">FAQ</li>
+        <li className="my-2 p-1 md:mr-4 cursor-pointer">
+          <a href="#home">Home</a>
+        </li>
+        <li className="hidden md:mr-4 cursor-pointer 2xl:inline-block">
+          <a href="#aboutus">About us</a>
+        </li>
+        <li className="my-2 p-1 md:mr-4 cursor-pointer">
+          <a href="#cupcakes">Choose goodies</a>
+        </li>
+        <li className="my-2 p-1 md:mr-4 cursor-pointer">
+          <a href="#delivery">Delivery</a>
+        </li>
+        <li className="my-2 p-1 md:mr-4 cursor-pointer">
+          <a href="#faq">FAQ</a>
+        </li>
         <li className="my-2 p-1 cursor-pointer">Contact</li>
       </ul>
       {/* Nav links end */}

@@ -9,6 +9,7 @@ import Expectations from "./Sections/Expectations";
 import FAQ from "./Sections/FAQ";
 import Newsletter from "./Sections/Newsletter";
 import Contacts from "./Sections/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Swiper data={LimitedEditionData} title="Limited edition flavors" />
       <Newsletter />
       <Contacts />
+      <Footer />
     </div>
   );
 }

@@ -4,9 +4,12 @@ import Navbar from "../components/Navbar";
 
 const Hero = () => {
   return (
-    <section className="hero overflow-x-hidden h-full text-[#775547] font-OpenSans min-h-[100vh]">
+    <section
+      className="hero overflow-x-hidden h-full text-[#775547] font-OpenSans min-h-[100vh]"
+      id="home"
+    >
       <Navbar />;
-      <div className="content flex flex-col justify-evenly items-center h-[80vh]">
+      <div className="content flex flex-col justify-evenly items-center h-[90vh]">
         <h1 className="text-6xl text-center italic w-[70%] lg:w-[55%] xl:w-[45%] 2xl:text-7xl 2xl:w-[42%]">
           We are baking for your{" "}
           <span className="text-[#DB5071]">pleasure</span>
@@ -18,7 +21,7 @@ const Hero = () => {
         <img
           src={cupcakes}
           alt="group of cupcakes in a line"
-          className="xl:w-[900px]"
+          className=" xl:w-[900px]"
         />
       </div>
     </section>

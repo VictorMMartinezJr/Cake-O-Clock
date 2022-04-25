@@ -11,7 +11,7 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="expect flex flex-col justify-center items-center font-OpenSans text-[#775547] mb-8">
+    <section className="expect flex flex-col justify-center items-center font-OpenSans text-[#775547] mb-20 xl:mb-40">
       <h2 className="text-3xl font-bold italic text-center mb-4 2xl:text-5xl">
         Sign up for our Newsletter
       </h2>

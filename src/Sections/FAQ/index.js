@@ -14,7 +14,10 @@ const FAQ = () => {
   };
 
   return (
-    <section className="faq flex flex-col items-center text-[#775547] mb-8">
+    <section
+      className="faq flex flex-col items-center text-[#775547] mb-20"
+      id="faq"
+    >
       <h2 className="text-3xl font-bold italic text-center mb-8 2xl:text-5xl">
         FAQ
       </h2>

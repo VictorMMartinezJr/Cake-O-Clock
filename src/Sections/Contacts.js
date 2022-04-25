@@ -3,8 +3,8 @@ import map from "../assets/map.png";
 
 const Contacts = () => {
   return (
-    <section className="expect flex justify-center items-center font-OpenSans text-[#775547]">
-      <div className="content grid justify-center items-center w-[80%] xl:grid-cols-2 my-20">
+    <section className="expect flex justify-center items-center font-OpenSans text-[#775547] mb-20 xl:mb-40">
+      <div className="content grid justify-center items-center w-[70%] xl:grid-cols-2">
         {/* Map image that only shows on desktop start */}
         <div
           className="hidden xl:inline-block h-full"

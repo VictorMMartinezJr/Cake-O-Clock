@@ -60,15 +60,18 @@ const Swiper = ({ data, title }) => {
   // Slide info end
 
   return (
-    <section className="carousel flex flex-col justify-center items-center font-OpenSans text-[#775547] mb-8">
-      <div className="text-center">
+    <section
+      className="carousel flex flex-col justify-center items-center font-OpenSans text-[#775547] mb-20 xl:my-40"
+      id="cupcakes"
+    >
+      <div className="text-center mb-4">
         <h2 className="text-3xl font-bold italic text-center mb-4">{title}</h2>
         <p>
           All Flavors are available through call in (minimum order of 3
           cupcakes)
         </p>
       </div>
-      <div className="swiper-container w-[80%] relative">
+      <div className="swiper-container w-[80%] relative mb-8">
         <AliceCarousel
           mouseTracking
           items={items}

@@ -1,6 +1,3 @@
 @tailwind base;
 @tailwind components;
-.toggle {
-  @apply bg-black;
-}
 @tailwind utilities;

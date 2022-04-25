@@ -6,6 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 .App {
   background: linear-gradient(45deg, #f5d6da, #f7d5d9);
